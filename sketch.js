@@ -79,7 +79,6 @@ function playSound(){
 function setup() {
 	createCanvas(720, 1500);
 	world.gravity.y = 10;
-    playSound()
   
   
   // สร้างปุ่มเริ่มเกม
@@ -94,6 +93,7 @@ function setup() {
   
   // สร้างฟังก์ชันเริ่มเกม
   function startGame() {
+  playSound()
   currentQuestion += 1
   startButton.style("display", "none"); 
   
